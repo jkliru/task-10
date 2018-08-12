@@ -12,7 +12,7 @@ class CheckBracesCommand extends Command
 {
     public function configure()
     {
-        $this->setName('sum')
+        $this->setName('check-braces')
             ->setDescription('This command checks string for braces')
             ->addArgument('string', InputArgument::REQUIRED, 'String');
     }
