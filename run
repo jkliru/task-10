@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+require_once 'vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use jkliru\CheckBracesCommand;
+
+$app = new Application("Welcome from Console", "v1.0.0");
+$app->add(new CheckBracesCommand());
+$app->run();
